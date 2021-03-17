@@ -13,6 +13,7 @@
 		ACD9293626023B1C00C10AAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD9293526023B1C00C10AAA /* Preview Assets.xcassets */; };
 		ACD9294426023D8600C10AAA /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD9294326023D8600C10AAA /* UpcomingView.swift */; };
 		ACD92947260247F500C10AAA /* CreateHypedEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92946260247F500C10AAA /* CreateHypedEventView.swift */; };
+		ACD9294A2602499A00C10AAA /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD929492602499A00C10AAA /* HypedEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ACD9293726023B1C00C10AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD9294326023D8600C10AAA /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
 		ACD92946260247F500C10AAA /* CreateHypedEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypedEventView.swift; sourceTree = "<group>"; };
+		ACD929492602499A00C10AAA /* HypedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				ACD92946260247F500C10AAA /* CreateHypedEventView.swift */,
+				ACD929492602499A00C10AAA /* HypedEvent.swift */,
 				ACD9292D26023B1B00C10AAA /* HypedList */,
 				ACD9292C26023B1B00C10AAA /* Products */,
 			);
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD92947260247F500C10AAA /* CreateHypedEventView.swift in Sources */,
+				ACD9294A2602499A00C10AAA /* HypedEvent.swift in Sources */,
 				ACD9293126023B1B00C10AAA /* HypedListTabView.swift in Sources */,
 				ACD9292F26023B1B00C10AAA /* HypedListApp.swift in Sources */,
 				ACD9294426023D8600C10AAA /* UpcomingView.swift in Sources */,
@@ -209,6 +213,9 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"\"-Xlinker -interposable\"",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -263,6 +270,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"\"-Xlinker -interposable\"",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
