@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CreateHypedEventView: View {
     @StateObject var hypedEvent = HypedEvent();
-
+    @State var showTime = false
+    
     var body: some View {
         Form {
             Section {
@@ -18,16 +19,28 @@ struct CreateHypedEventView: View {
             }
             
             Section {
-                DatePicker("Date", selection: $hypedEvent.date, displayedComponents: [.date, .hourAndMinute])
+                FormLabelView(text: "Event Date", iconSystemName: "calendar")
+                
+                DatePicker(
+                    "Date",
+                    selection: $hypedEvent.date,
+                    displayedComponents: showTime ? [.date, .hourAndMinute] : [.date]
+                )
                     .datePickerStyle(GraphicalDatePickerStyle())
+                
+                Toggle(isOn: $showTime) {
+                    FormLabelView(text: "Time", iconSystemName: "clock.fill")
+                }
             }
             
             Section {
-                ColorPicker("Color", selection: $hypedEvent.color)
+                ColorPicker(selection: $hypedEvent.color) {
+                    FormLabelView(text: "Color", iconSystemName: "eyedropper.halffull")
+                }
             }
             
             Section {
-                TextField("https://example.com", text: $hypedEvent.url)
+                TextField("example.com", text: $hypedEvent.url)
                     .keyboardType(.URL)
                     .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
             }
