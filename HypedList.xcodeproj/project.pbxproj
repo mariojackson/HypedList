@@ -12,6 +12,7 @@
 		ACD9293326023B1C00C10AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD9293226023B1C00C10AAA /* Assets.xcassets */; };
 		ACD9293626023B1C00C10AAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD9293526023B1C00C10AAA /* Preview Assets.xcassets */; };
 		ACD9294426023D8600C10AAA /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD9294326023D8600C10AAA /* UpcomingView.swift */; };
+		ACD92947260247F500C10AAA /* CreateHypedEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92946260247F500C10AAA /* CreateHypedEventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		ACD9293526023B1C00C10AAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACD9293726023B1C00C10AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD9294326023D8600C10AAA /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
+		ACD92946260247F500C10AAA /* CreateHypedEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypedEventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		ACD9292226023B1B00C10AAA = {
 			isa = PBXGroup;
 			children = (
+				ACD92946260247F500C10AAA /* CreateHypedEventView.swift */,
 				ACD9292D26023B1B00C10AAA /* HypedList */,
 				ACD9292C26023B1B00C10AAA /* Products */,
 			);
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD92947260247F500C10AAA /* CreateHypedEventView.swift in Sources */,
 				ACD9293126023B1B00C10AAA /* HypedListTabView.swift in Sources */,
 				ACD9292F26023B1B00C10AAA /* HypedListApp.swift in Sources */,
 				ACD9294426023D8600C10AAA /* UpcomingView.swift in Sources */,
