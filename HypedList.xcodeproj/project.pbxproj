@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC0858A326025B7C00D7FEA5 /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0858A226025B7C00D7FEA5 /* FormLabelView.swift */; };
+		ACBAAEBC2603E2C7002DD7DF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBAAEBB2603E2C7002DD7DF /* ImagePicker.swift */; };
 		ACD9292F26023B1B00C10AAA /* HypedListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD9292E26023B1B00C10AAA /* HypedListApp.swift */; };
 		ACD9293126023B1B00C10AAA /* HypedListTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD9293026023B1B00C10AAA /* HypedListTabView.swift */; };
 		ACD9293326023B1C00C10AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD9293226023B1C00C10AAA /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		AC0858A226025B7C00D7FEA5 /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
+		ACBAAEBB2603E2C7002DD7DF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		ACD9292B26023B1B00C10AAA /* HypedList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypedList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD9292E26023B1B00C10AAA /* HypedListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListApp.swift; sourceTree = "<group>"; };
 		ACD9293026023B1B00C10AAA /* HypedListTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListTabView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				ACD92946260247F500C10AAA /* CreateHypedEventView.swift */,
+				ACBAAEBB2603E2C7002DD7DF /* ImagePicker.swift */,
 				AC0858A226025B7C00D7FEA5 /* FormLabelView.swift */,
 				ACD929492602499A00C10AAA /* HypedEvent.swift */,
 				ACD9292D26023B1B00C10AAA /* HypedList */,
@@ -153,6 +156,7 @@
 				ACD92947260247F500C10AAA /* CreateHypedEventView.swift in Sources */,
 				AC0858A326025B7C00D7FEA5 /* FormLabelView.swift in Sources */,
 				ACD9294A2602499A00C10AAA /* HypedEvent.swift in Sources */,
+				ACBAAEBC2603E2C7002DD7DF /* ImagePicker.swift in Sources */,
 				ACD9293126023B1B00C10AAA /* HypedListTabView.swift in Sources */,
 				ACD9292F26023B1B00C10AAA /* HypedListApp.swift in Sources */,
 				ACD9294426023D8600C10AAA /* UpcomingView.swift in Sources */,
