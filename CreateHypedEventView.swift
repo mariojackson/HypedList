@@ -34,13 +34,31 @@ struct CreateHypedEventView: View {
                 }
             }
             
-            Button(action: {
-                showImagePicker = true
-            }) {
-                FormLabelView(text: "Pick an Image", iconSystemName: "photo.fill")
-            }
-            .sheet(isPresented: $showImagePicker) {
-                ImagePicker()
+            Section {
+                if hypedEvent.image() == nil {
+                    Button(action: {
+                        showImagePicker = true
+                    }) {
+                        FormLabelView(text: "Pick an Image", iconSystemName: "photo.fill")
+                    }
+                } else {
+                    Button(action: {
+                        hypedEvent.imageData = nil
+                    }) {
+                        Text("Remove Image").foregroundColor(.red)
+                    }.buttonStyle(BorderlessButtonStyle())
+                    
+                    Button(action: {
+                        showImagePicker = true
+                    }) {
+                        hypedEvent.image()!
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    .buttonStyle(BorderlessButtonStyle())
+                }
+            }.sheet(isPresented: $showImagePicker) {
+                ImagePicker(imageData: $hypedEvent.imageData)
             }
             
             Section {
